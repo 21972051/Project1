@@ -1,0 +1,126 @@
+/* project.css
+Name: Paulus Angkodjojo
+Student Number: 21972051*/
+
+/*================================================*/
+/*general*/
+html{
+	background-color: PapayaWhip;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*================================================*/
+/*header*/
+header img{
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	text-align: center;
+	max-height:100%;
+	max-width: 99%;
+}
+
+/*================================================*/
+/*main navigator*/
+#main_nav ul{
+	margin: auto;
+	margin-top: 15px;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+}
+
+#main_nav ul li{
+	width:19%;
+	height: 50px;
+	list-style-type: none;
+	background-color: Orange;
+	display: inline-block;
+}
+
+#main_nav li a{
+	font:130% black;
+	color:black;
+	padding: 11px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+#main_nav li:hover {
+	background-color: DarkOrange;	
+}
+
+/*===========================================================*/
+/*Content*/
+.Content{
+	margin: auto;
+	margin-top: 25px;
+	position: center;
+	padding: 0;
+	width: 98%;
+}
+
+.content-header {
+	padding: 5px 20px;
+	background-color: Orange;
+	border: 2px solid Black;
+}
+
+.content-body {
+	padding: 5px 20px;
+	background-color: white;
+	border: 2px solid Black;
+}
+
+/*===========================================================*/
+/*Form*/
+.Form input[type=text], input[type=password]{
+	width:70%;
+	padding: 10px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid black;
+}
+p.InputError{
+	text-align: left;
+	color: red;
+	display:inline-block;
+	padding-left: 10px;
+}
+
+/*===========================================================*/
+/*Footer*/
+footer{
+	margin-top: 110px;
+	width: 100%;	
+	height: auto;
+	text-align: center;
+	background-color: DarkOrange;
+}
+
+#left-footer{
+	float: left;
+	width: 50%;
+	background-color: DarkOrange;
+}
+
+#right-footer{
+	float: right;
+	width: 50%;
+	background-color: DarkOrange;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer li a{
+	font-weight: bold;
+	color: black;
+}
