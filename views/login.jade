@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
 head
-    title Home
+    title Login
     link(rel="stylesheet" type="text/css" href="project.css")
     meta(charset="UTF-8")
     script(src="project.js")
@@ -28,23 +28,22 @@ body(onload="modDate()")
                         b Log In
     div(class="Content")
         div(class="content-header")
-            h2 Home
+            h2 Log In
         div(class="content-body")
-            h2 Welcome to the Group Management System
-            a The goal of this website is to allow users to create and adjust their own personal project groups, develop a checklist of items the group
-            a is required to complete which can only be added or removed by the group leader, and to allow members of the group to check off completed tasks.<br>
-            h2 Description
-            h3 Home
-            a Contains the website description and the page descriptions.
-            h3 Projects
-            a Contains the current user's list of projects and groups.<br><br>
-            a Note: User must be logged on in order to view them.
-            h3 About Me
-            a Contains the details about the developer as well as the references used to make this website.
-            h3 Sign up
-            a Allows new users to sign up and use the website.
-            h3 Log in
-            a Allows users to access their projects and groups in the projects tab. New users must sign up first before they can log in.
+            form(onsubmit="return(UserValidate())")
+                div(class="Form")
+                    label
+                        b Username:
+                    input(type="text" id="Username" placeholder="EnterUsername" required)
+                    label
+                        b Password:
+                    input(type="password" id="Password" placeholder="EnterPassword" required)
+                    p(id="PasswordError" class="InputError")
+                    label
+                        b Remember Me
+                    input(type="checkbox" checked="checked")
+                    button(type="submit") Log In
+                    b New User? Sign up first!
     footer
         div(id="left-footer")
             ul
