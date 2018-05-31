@@ -1,0 +1,72 @@
+extend layout
+block content
+    header
+        a(href="/index")
+            img(src="Headernewf.png" alt="Header")
+        nav(id="main_nav")
+            ul
+                li
+                    a(href="/index")
+                        b Home
+                li
+                    a(href="/projects")
+                        b Projects
+                li
+                    a(href="/aboutme")
+                        b About Me
+                li
+                    a(href="/signup")
+                        b Sign Up
+                li
+                    a(href="/login")
+                        b Log In
+    div(class="Content")
+        div(class="content-header")
+            h2 Sign up
+        div(class="content-body")
+            form(onsubmit="return(Validate())")
+                div(class="Form")
+                    label
+                        b First Name:<br>
+                    input(type="text" id="FirstName" placeholder="Enter First Name" required)
+                    p(id="FirstNameError" class="InputError")
+                    label
+                        b Last Name:<br>
+                    input(type="text" id="LastName" placeholder="Enter Last Name" required)
+                    p(id="LastNameError" class="InputError")
+                    label
+                        b Email:<br>
+                    input(type="text" id="Email" placeholder="Enter Email" required)
+                    p(id="EmailError" class="InputError")
+                    label
+                        b Username<br>
+                    input(type="text" id="Username" placeholder="Enter Userame" required)
+                    label
+                        b Password:
+                        a (has to be 6-12 characters long)<br>
+                    input(type="password" id="Password" placeholder="Enter Password" required)
+                    p(id="PasswordError" class="InputError")
+                    label
+                        b Agree to terms and conditions
+                    input(type="checkbox" required)
+                    button(type="submit") Sign Up
+    footer
+        div(id="left-footer")
+            ul
+                li
+                    a(href="/index") Home
+                li
+                    a(href="/projects") Projects
+                li
+                    a(href="/aboutme") About Me
+        div(id="right-footer")
+            ul
+                li
+                    a(href="/signup") Sign up
+                li
+                    a(href="/login") Log in
+                li
+                    a Terms and Conditions
+        div(id="Date")
+
+                    
