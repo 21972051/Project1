@@ -1,0 +1,83 @@
+extend layout
+block content
+    header
+        a(href="/index")
+            img(src="Headernewf.png" alt="Header")
+        nav(id="main_nav")
+            ul
+                li
+                    a(href="/index")
+                        b Home
+                li
+                    a(href="/projects")
+                        b Projects
+                li
+                    a(href="/aboutme")
+                        b About Me
+                li
+                    a(href="/signup")
+                        b Sign Up
+                li
+                    a(href="/login")
+                        b Log In
+    div(class="Content")
+        div(class="content-header")
+            h2 New Project
+        div(class="content-body")
+            h2 Project Details
+            div(class="Form")
+                a (Please input member's usernames when required)<br>
+                label
+                    b Project Name:
+                input(type="text" placeholder="Enter Project Name" required)
+                label
+                    b Project Leader:
+                input(type="text" placeholder="Enter Project Leader" required)
+                label
+                    b Members:
+                    a (Ensure each member is seperated by ", ")
+                input(type="text" placeholder="Enter Group Members")
+                label
+                    b Project Description:
+                input(type="text" placeholder="Enter Project Description")
+                label
+                    b Tasks:
+                    a (Ensure each task is seperated by ", ")
+                input(type="text" placeholder="Enter Tasks")
+                button(type="submit")
+                    a Create Project Group
+        div(class="content-header")
+            h2 Current Projects
+        div(class="content-body")
+            h2 Sample Project 1
+            b Group Members:
+            a Paulus Angkodjojo (Leader)
+            b Description:
+            a Sample page
+            b Tasks:
+            input(type="checkbox")
+            label
+                b Finish jade
+            input(type="checkbox")
+            label
+                b Get mongo databases working
+    footer
+        div(id="left-footer")
+            ul
+                li
+                    a(href="/index") Home
+                li
+                    a(href="/projects") Projects
+                li
+                    a(href="/aboutme") About Me
+        div(id="right-footer")
+            ul
+                li
+                    a(href="/signup") Sign up
+                li
+                    a(href="/login") Log in
+                li
+                    a Terms and Conditions
+        div(id="Date")
+
+                    
