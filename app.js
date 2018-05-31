@@ -23,7 +23,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //opening jade files
-app.get('/',function(req,res){
+app.get('/aboutme',function(req,res){
 	res.render('aboutme',{title:'aboutme'});
 })
 
