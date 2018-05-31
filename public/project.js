@@ -2,11 +2,12 @@
 Name: Paulus Angkodjojo
 Student Number: 21972051*/
 
-/*var connect=require('connect');
-var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(5000,function(){
-	console.log('Server running on 5000');
-});*/
+var express = require('express');
+var app = express();
+//opening jade files
+app.get('/about',function(req,res)){
+	res.render('aboutme.jade',{title:'aboutme'});
+})
 
 //Password validation for log in
 function UserValidate() {
