@@ -22,7 +22,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-
+//opening jade files
+app.get('/aboutme',function(req,res)){
+	res.render('aboutme.jade',{title:'aboutme'});
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
