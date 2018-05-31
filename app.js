@@ -23,9 +23,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //opening jade files
-app.get('/about',function(req,res)){
-	res.render('aboutme.jade',{title:'aboutme'});
-})
+//app.get('/about',function(req,res)){
+	//res.render('aboutme.jade',{title:'aboutme'});
+//})
 
 
 
