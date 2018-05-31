@@ -1,11 +1,5 @@
-doctype html
-html(lang="en")
-head
-    title Home
-    link(rel="stylesheet" type="text/css" href="project.css")
-    meta(charset="UTF-8")
-    script(src="project.js")
-body(onload="modDate()")
+extend layout
+block content
     header
         a(href="index.jade")
             img(src="Headernewf.png" alt="Header")
@@ -18,7 +12,7 @@ body(onload="modDate()")
                     a(href="projects.jade")
                         b Projects
                 li
-                    a(href="aboutme.jade")
+                    a(href="/aboutme")
                         b About Me
                 li
                     a(href="signup.jade")
