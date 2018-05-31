@@ -5,8 +5,8 @@ Student Number: 21972051*/
 var express = require('express');
 var app = express();
 //opening jade files
-app.get('/about',function(req,res)){
-	res.render('aboutme',{title:'aboutme'});
+app.get('/aboutme',function(req,res)){
+	res.render('aboutme.jade',{title:'aboutme'});
 })
 
 //Password validation for log in
