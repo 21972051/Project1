@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 //opening jade files
 app.get('/about',function(req,res)){
-	res.render('aboutme.jade',{title:'aboutme'});
+	res.render('aboutme',{title:'aboutme'});
 })
 
 //Password validation for log in
