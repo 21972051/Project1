@@ -42,7 +42,4 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-//opening jade files
-app.get('/',function(req,res)){
-	res.render('aboutme',{title:'aboutme'});
-})
+
