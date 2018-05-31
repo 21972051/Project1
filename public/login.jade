@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+head
+    title Login
+    link(rel="stylesheet" type="text/css" href="project.css")
+    meta(charset="UTF-8")
+    script(src="project.js")
+body(onload="modDate()")
+    header
+        a(href="index.jade")
+            img(src="Headernewf.png" alt="Header")
+        nav(id="main_nav")
+            ul
+                li
+                    a(href="index.jade")
+                        b Home
+                li
+                    a(href="projects.jade")
+                        b Projects
+                li
+                    a(href="aboutme.jade")
+                        b About Me
+                li
+                    a(href="signup.jade")
+                        b Sign Up
+                li
+                    a(href="login.jade")
+                        b Log In
+    div(class="Content")
+        div(class="content-header")
+            h2 Log In
+        div(class="content-body")
+            form(onsubmit="return(UserValidate())")
+                div(class="Form")
+                    label
+                        b Username:
+                    input(type="text" id="Username" placeholder="EnterUsername" required)
+                    label
+                        b Password:
+                    input(type="password" id="Password" placeholder="EnterPassword" required)
+                    p(id="PasswordError" class="InputError")
+                    label
+                        b Remember Me
+                    input(type="checkbox" checked="checked")
+                    button(type="submit") Log In
+                    b New User? Sign up first!
+    footer
+        div(id="left-footer")
+            ul
+                li
+                    a(href="index.jade") Home
+                li
+                    a(href="projects.jade") Projects
+                li
+                    a(href="aboutme.jade") About Me
+        div(id="right-footer")
+            ul
+                li
+                    a(href="signup.jade") Sign up
+                li
+                    a(href="login.jade") Log in
+                li
+                    a Terms and Conditions
+        div(id="Date")
+
+                    

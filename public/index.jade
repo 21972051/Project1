@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+head
+    title Home
+    link(rel="stylesheet" type="text/css" href="project.css")
+    meta(charset="UTF-8")
+    script(src="project.js")
+body(onload="modDate()")
+    header
+        a(href="index.jade")
+            img(src="Headernewf.png" alt="Header")
+        nav(id="main_nav")
+            ul
+                li
+                    a(href="index.jade")
+                        b Home
+                li
+                    a(href="projects.jade")
+                        b Projects
+                li
+                    a(href="aboutme.jade")
+                        b About Me
+                li
+                    a(href="signup.jade")
+                        b Sign Up
+                li
+                    a(href="login.jade")
+                        b Log In
+    div(class="Content")
+        div(class="content-header")
+            h2 Home
+        div(class="content-body")
+            h2 Welcome to the Group Management System
+            a The goal of this website is to allow users to create and adjust their own personal project groups, develop a checklist of items the group
+            a is required to complete which can only be added or removed by the group leader, and to allow members of the group to check off completed tasks.<br>
+            h2 Description
+            h3 Home
+            a Contains the website description and the page descriptions.
+            h3 Projects
+            a Contains the current user's list of projects and groups.<br><br>
+            a Note: User must be logged on in order to view them.
+            h3 About Me
+            a Contains the details about the developer as well as the references used to make this website.
+            h3 Sign up
+            a Allows new users to sign up and use the website.
+            h3 Log in
+            a Allows users to access their projects and groups in the projects tab. New users must sign up first before they can log in.
+    footer
+        div(id="left-footer")
+            ul
+                li
+                    a(href="index.jade") Home
+                li
+                    a(href="projects.jade") Projects
+                li
+                    a(href="aboutme.jade") About Me
+        div(id="right-footer")
+            ul
+                li
+                    a(href="signup.jade") Sign up
+                li
+                    a(href="login.jade") Log in
+                li
+                    a Terms and Conditions
+        div(id="Date")
+
+                    
