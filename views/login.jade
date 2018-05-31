@@ -27,16 +27,16 @@ block content
             form(onsubmit="return(UserValidate())")
                 div(class="Form")
                     label
-                        b Username:
-                    input(type="text" id="Username" placeholder="EnterUsername" required)
+                        b Username: <br>
+                    input(type="text" id="Username" placeholder="EnterUsername" required) (br)
                     label
-                        b Password:
-                    input(type="password" id="Password" placeholder="EnterPassword" required)
-                    p(id="PasswordError" class="InputError")
+                        b Password:<br>
+                    input(type="password" id="Password" placeholder="EnterPassword" required) <br>
+                    p(id="PasswordError" class="InputError")<br>
                     label
                         b Remember Me
-                    input(type="checkbox" checked="checked")
-                    button(type="submit") Log In
+                    input(type="checkbox" checked="checked") <br>
+                    button(type="submit") Log In<br><br>
                     b New User? Sign up first!
     footer
         div(id="left-footer")
