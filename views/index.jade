@@ -1,5 +1,67 @@
-extends layout
+doctype html
+html(lang="en")
+head
+    title Home
+    link(rel="stylesheet" type="text/css" href="project.css")
+    meta(charset="UTF-8")
+    script(src="project.js")
+body(onload="modDate()")
+    header
+        a(href="Home.html")
+            img(src="Headernewf.png" alt="Header")
+        nav(id="main_nav")
+            ul
+                li
+                    a(href="Home.html")
+                        b Home
+                li
+                    a(href="Projects.html")
+                        b Projects
+                li
+                    a(href="AboutMe.html")
+                        b About Me
+                li
+                    a(href="Signup.html")
+                        b Sign Up
+                li
+                    a(href="LogIn.html")
+                        b Log In
+    div(class="Content")
+        div(class="content-header")
+            h2 Home
+        div(class="content-body")
+            h2 Welcome to the Group Management System
+                p The goal of this website is to allow users to create and adjust their own personal project groups, develop a checklist of items the group
+                p is required to complete which can only be added or removed by the group leader, and to allow members of the group to check off completed tasks.<br>
+            h2 Description
+            h3 Home
+                p Contains the website description and the page descriptions.
+            h3 Projects
+                p Contains the current user's list of projects and groups.<br><br>
+                b Note: User must be logged on in order to view them.
+            h3 About Me
+                p Contains the details about the developer as well as the references used to make this website.
+            h3 Sign up
+                p Allows new users to sign up and use the website.
+            h3 Log in
+                p Allows users to access their projects and groups in the projects tab. New users must sign up first before they can log in.
+    footer
+        div(id="left-footer")
+            ul
+                li
+                    a(href="Home.html") Home
+                li
+                    a(href="Projects.html") Projects
+                li
+                    a(href="AboutMe.html") About Me
+        div(id="right-footer")
+            ul
+                li
+                    a(href="Signup.html") Sign up
+                li
+                    a(href="LogIn.html") Log in
+                li
+                    a Terms and Conditions
+        div(id="Date")
 
-block content
-  h1= title
-  p Welcome to #{title}
+                    
