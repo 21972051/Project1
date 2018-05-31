@@ -23,8 +23,20 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //opening jade files
+app.get('/index',function(req,res){
+	res.render('index',{title:'home'});
+})
 app.get('/aboutme',function(req,res){
 	res.render('aboutme',{title:'aboutme'});
+})
+app.get('/projects',function(req,res){
+	res.render('projects',{title:'aboutme'});
+})
+app.get('/login',function(req,res){
+	res.render('login',{title:'aboutme'});
+})
+app.get('/signup',function(req,res){
+	res.render('signup',{title:'aboutme'});
 })
 
 // catch 404 and forward to error handler
